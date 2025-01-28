@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Живи здесь!</title>
+</head>
+<body>
+    <div id="main" class="main-frame" style="z-index: 0;">
+        <img src="belarus.svg">
+        <div class="main-frame-title">Живи здесь!</div>
+        <button id="start" role="button">Начать тест</button>
+        <div class="main-frame-description">Этот тест поможет вам определить, в каком регионе Республики Беларусь вы могли бы чувствовать себя наиболее комфортно. Он поможет выявить ваши истинные предпочтения, чтобы рекомендовать идеальное место для жизни. Узнайте, какая локация близка вашему сердцу и стилю жизни! Найдите свой идеальный дом!</div>
+        <div class="main-frame-author">Чеславская И. И.</div>
+    </div>
+    <div id="question-block" class="question-block">
+        <div id="q1-block" class="question" style="z-index: 1;">
+            <div class="question-text">Какое окружение вы предпочитаете?</div>
+            <div class="answer-block">
+                <input type="radio" name="q1" id="q1-1">
+                <label for="q1-1">Областной центр с развитой инфраструктурой</label>
+                <input type="radio" name="q1" id="q1-2">
+                <label for="q1-2">Небольшой город или поселок недалеко от областного центра</label>
+                <input type="radio" name="q1" id="q1-3">
+                <label for="q1-3">Пригород или деревня</label>
+            </div>
+        </div>
+        <div id="q2-block" class="question" style="z-index: 2;">
+            <div class="question-text">Как важно для вас наличие культурных мероприятий?</div>
+            <div class="answer-block">
+                <input type="radio" name="q2" id="q2-1">
+                <label for="q2-1">Очень важно</label>
+                <input type="radio" name="q2" id="q2-2">
+                <label for="q2-2">Немного важно</label>
+                <input type="radio" name="q2" id="q2-3">
+                <label for="q2-3">Не важно</label>
+            </div>
+        </div>
+        <div id="q3-block" class="question" style="z-index: 3;">
+            <div class="question-text">Предпочитаете ли вы жизнь в природном окружении?</div>
+            <div class="answer-block">
+                <input type="radio" name="q3" id="q3-1">
+                <label for="q3-1">Да, очень</label>
+                <input type="radio" name="q3" id="q3-2">
+                <label for="q3-2">В некоторых аспектах</label>
+                <input type="radio" name="q3" id="q3-3">
+                <label for="q3-3">Не очень</label>
+            </div>
+        </div>
+        <div id="q4-block" class="question" style="z-index: 4;">
+            <div class="question-text">Как часто вы планируете путешествовать?</div>
+            <div class="answer-block">
+                <input type="radio" name="q4" id="q4-1">
+                <label for="q4-1">Часто, хотелось бы много путешествовать</label>
+                <input type="radio" name="q4" id="q4-2">
+                <label for="q4-2">Иногда, в основном по стране</label>
+                <input type="radio" name="q4" id="q4-3">
+                <label for="q4-3">Не беспокоюсь об этом</label>
+            </div>
+        </div>
+        <div id="q5-block" class="question" style="z-index: 5;">
+            <div class="question-text">Какое направление в культуре вас интересует больше?</div>
+            <div class="answer-block">
+                <input type="radio" name="q5" id="q5-1">
+                <label for="q5-1">Городскую (театр, кино, выставки)</label>
+                <input type="radio" name="q5" id="q5-2">
+                <label for="q5-2">Сельскую (традиции, обычаи, праздники)</label>
+                <input type="radio" name="q5" id="q5-3">
+                <label for="q5-3">Не важно, интересно все</label>
+            </div>
+        </div>
+        <div id="q6-block" class="question" style="z-index: 6;">
+            <div class="question-text">Что играет наибольшую роль в вашем выборе?</div>
+            <div class="answer-block">
+                <input type="radio" name="q6" id="q6-1">
+                <label for="q6-1">Качество жизни</label>
+                <input type="radio" name="q6" id="q6-2">
+                <label for="q6-2">Возможности для работы</label>
+                <input type="radio" name="q6" id="q6-3">
+                <label for="q6-3">Природа и экология</label>
+            </div>
+        </div>
+        <div id="q7-block" class="question" style="z-index: 7;">
+            <div class="question-text">Какой уровень образования для вас приемлем?</div>
+            <div class="answer-block">
+                <input type="radio" name="q7" id="q7-1">
+                <label for="q7-1">Высшее образование</label>
+                <input type="radio" name="q7" id="q7-2">
+                <label for="q7-2">Среднее специальное</label>
+                <input type="radio" name="q7" id="q7-3">
+                <label for="q7-3">Не имеет значение</label>
+            </div>
+        </div>
+        <div id="q8-block" class="question" style="z-index: 8;">
+            <div class="question-text">Как вы относитесь к безопасности региона?</div>
+            <div class="answer-block">
+                <input type="radio" name="q8" id="q8-1">
+                <label for="q8-1">Очень важно, надо избегать проблем</label>
+                <input type="radio" name="q8" id="q8-2">
+                <label for="q8-2">Важно, но менее критично</label>
+                <input type="radio" name="q8" id="q8-3">
+                <label for="q8-3">НЕ беспокоюсь об этом</label>
+            </div>
+        </div>
+        <div id="q9-block" class="question" style="z-index: 9;">
+            <div class="question-text">Насколько важна для вас близость к природе?</div>
+            <div class="answer-block">
+                <input type="radio" name="q9" id="q9-1">
+                <label for="q9-1">Важно наличие водоема</label>
+                <input type="radio" name="q9" id="q9-2">
+                <label for="q9-2">Важно наличие лесного массива</label>
+                <input type="radio" name="q9" id="q9-3">
+                <label for="q9-3">Не принципиально</label>
+            </div>
+        </div>
+        <div id="q10-block" class="question" style="z-index: 10;">
+            <div class="question-text">Важна ли развитая транспортная сеть?</div>
+            <div class="answer-block">
+                <input type="radio" name="q10" id="q10-1">
+                <label for="q10-1">Да, очень важно наличие общественного транспорта</label>
+                <input type="radio" name="q10" id="q10-2">
+                <label for="q10-2">Не маловажно</label>
+                <input type="radio" name="q10" id="q10-3">
+                <label for="q10-3">Не важно, при наличии собственного средства передвижения</label>
+            </div>
+        </div>
+        <div id="q11-block" class="question" style="z-index: 11;">
+            <div class="question-text">Ценно ли нахождение исторических памятников рядом с местом проживания?</div>
+            <div class="answer-block">
+                <input type="radio" name="q11" id="q11-1">
+                <label for="q11-1">Да, хочу любоваться им каждое утро</label>
+                <input type="radio" name="q11" id="q11-2">
+                <label for="q11-2">Желательно, но непринципиально</label>
+                <input type="radio" name="q11" id="q11-3">
+                <label for="q11-3">Не имеет значение</label>
+            </div>
+        </div>
+        <div id="q12-block" class="question" style="z-index: 12;">
+            <div class="question-text">Какое расстояние до столицы вам комфортно?</div>
+            <div class="answer-block">
+                <input type="radio" name="q12" id="q12-1">
+                <label for="q12-1">В пределах 50 км</label>
+                <input type="radio" name="q12" id="q12-2">
+                <label for="q12-2">В пределах 100 км</label>
+                <input type="radio" name="q12" id="q12-3">
+                <label for="q12-3">Не важно</label>
+            </div>
+        </div>
+        <div id="q13-block" class="question" style="z-index: 13;">
+            <div class="question-text">Есть ли у вас предпочтения в отношении соседей?</div>
+            <div class="answer-block">
+                <input type="radio" name="q13" id="q13-1">
+                <label for="q13-1">Предпочтительно молодежь</label>
+                <input type="radio" name="q13" id="q13-2">
+                <label for="q13-2">Предпочтительно семейные пары</label>
+                <input type="radio" name="q13" id="q13-3">
+                <label for="q13-3">Любые</label>
+            </div>
+        </div>
+        <div id="q14-block" class="question" style="z-index: 14;">
+            <div class="question-text">Насколько важна для вас возможность развития бизнеса?</div>
+            <div class="answer-block">
+                <input type="radio" name="q14" id="q14-1">
+                <label for="q14-1">Очень важна</label>
+                <input type="radio" name="q14" id="q14-2">
+                <label for="q14-2">Желательно, но непринципиально</label>
+                <input type="radio" name="q14" id="q14-3">
+                <label for="q14-3">Не важна</label>
+            </div>
+        </div>
+        <div id="q15-block" class="question" style="z-index: 15;">
+            <div class="question-text">Какова ваша позиция по поводу транспортных пробок и задержек?</div>
+            <div class="answer-block">
+                <input type="radio" name="q15" id="q15-1">
+                <label for="q15-1">Пробки и задержки исключены</label>
+                <input type="radio" name="q15" id="q15-2">
+                <label for="q15-2">Это явление неизбежно</label>
+                <input type="radio" name="q15" id="q15-3">
+                <label for="q15-3">Не имеет значение</label>
+            </div>
+        </div>
+        <div id="q16-block" class="question" style="z-index: 16;">
+            <div class="question-text">Какое расстояние до места работы для вас приемлемо?</div>
+            <div class="answer-block">
+                <input type="radio" name="q16" id="q16-1">
+                <label for="q16-1">В пределах 50 км</label>
+                <input type="radio" name="q16" id="q16-2">
+                <label for="q16-2">Как можно ближе</label>
+                <input type="radio" name="q16" id="q16-3">
+                <label for="q16-3">Не имеет значение</label>
+            </div>
+        </div>
+        <div id="q17-block" class="question" style="z-index: 17;">
+            <div class="question-text">Какое количество населения вам кажется оптимальным для комфортной жизни?</div>
+            <div class="answer-block">
+                <input type="radio" name="q17" id="q17-1">
+                <label for="q17-1">Город-миллионник</label>
+                <input type="radio" name="q17" id="q17-2">
+                <label for="q17-2">До 500 тысяч человек</label>
+                <input type="radio" name="q17" id="q17-3">
+                <label for="q17-3">Чем меньше тем комфортнее</label>
+            </div>
+        </div>
+        <div id="q18-block" class="question" style="z-index: 18;">
+            <div class="question-text">Интересует ли вас наличие крупных культурных мероприятий и фестивалей?</div>
+            <div class="answer-block">
+                <input type="radio" name="q18" id="q18-1">
+                <label for="q18-1">Да, очень важно быть в центре событий</label>
+                <input type="radio" name="q18" id="q18-2">
+                <label for="q18-2">Нет, при необходимости можно посетить их в любой точке Беларуси</label>
+                <input type="radio" name="q18" id="q18-3">
+                <label for="q18-3">Не имеет значение</label>
+            </div>
+        </div>
+        <div id="q19-block" class="question" style="z-index: 19;">
+            <div class="question-text">Какой тип торговли и услуг должен быть доступен поблизости?</div>
+            <div class="answer-block">
+                <input type="radio" name="q19" id="q19-1">
+                <label for="q19-1">Обязательно наличие крупных торговых центров</label>
+                <input type="radio" name="q19" id="q19-2">
+                <label for="q19-2">Достаточно несколько торговых и точек и центров услуг</label>
+                <input type="radio" name="q19" id="q19-3">
+                <label for="q19-3">Не имеет значение, при необходимости можно добраться на транспорте</label>
+            </div>
+        </div>
+        <div id="q20-block" class="question" style="z-index: 20;">
+            <div class="question-text">Важно ли наличие развлекательных центров вблизи места жительства?</div>
+            <div class="answer-block">
+                <input type="radio" name="q20" id="q20-1">
+                <label for="q20-1">Очень важно</label>
+                <input type="radio" name="q20" id="q20-2">
+                <label for="q20-2">Важно, но непринципиально</label>
+                <input type="radio" name="q20" id="q20-3">
+                <label for="q20-3">Не имеет значение</label>
+            </div>
+        </div>
+        <button id="next" role="button">Дальше</button>
+    </div>
+    <div id="result-block" class="result-block">
+        <div id="result1" class="result">
+            <div class="result-title">Города в Минской области</div>
+            <div class="result-panels">
+                <div class="result-panel">
+                    <div class="result-panel-title">Удобное географическое расположение</div>
+                    <div class="result-panel-text">Минская область находится в центре Беларуси, что обеспечивает легкий доступ ко всем регионам страны и соседним государствам. Это способствует развитию транспортной инфраструктуры.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Развита транспортная сеть</div>
+                    <div class="result-panel-text">Область обладает хорошо развитой сетью автомобильных и железных дорог, что упрощает логистику и перемещение товаров.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Экономический потенциал</div>
+                    <div class="result-panel-text">Минская область является одним из экономически развитых регионов Беларуси. Здесь расположены множество промышленных предприятий, что создает возможности для трудоустройства.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Промышленность и сельское хозяйство</div>
+                    <div class="result-panel-text">Область сочетает в себе развитую промышленность и аграрный сектор. Это позволяет разнообразить экономику и снижать зависимость от отдельных отраслей.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Естественные ресурсы</div>
+                    <div class="result-panel-text">Минская область богата лесами, водоемами и минеральными ресурсами, что создает возможности для экотуризма и сельского хозяйства.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Культурное и историческое наследие</div>
+                    <div class="result-panel-text">В области имеются многочисленные памятники архитектуры и культуры, что делает её интересной для туристов.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Качество жизни</div>
+                    <div class="result-panel-text">Относительно низкая плотность населения и наличие зеленых зон способствуют комфортному и спокойному образу жизни.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Образование и наука</div>
+                    <div class="result-panel-text">В регионе расположены несколько учебных заведений и научных институтов, что способствует подготовке квалифицированных специалистов.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Инвестиционная привлекательность</div>
+                    <div class="result-panel-text">Минская область активно привлекает инвестиции благодаря стабильной политической и экономической обстановке, а также наличию свободных экономических зон.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Развитая инфраструктура</div>
+                    <div class="result-panel-text">Наличие торговых центров, медицинских учреждений, спортивных комплексов и культурных объектов делает жизнь в области удобной и комфортной.</div>
+                </div>
+            </div>
+        </div>
+        <div id="result2" class="result">
+            <div class="result-title">Города Брестской области</div>
+            <div class="result-panels">
+                <div class="result-panel">
+                    <div class="result-panel-title">Географическое расположение</div>
+                    <div class="result-panel-text">Брестская область находится на границе с Польшей и Украиной, что дает удобный доступ к международным рынкам и транспортным коридорам.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Развита транспортная инфраструктура</div>
+                    <div class="result-panel-text">Наличие железных дорог, автодорог, а также международных пунктов пропуска облегчает логистику и передвижение.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Экономический потенциал</div>
+                    <div class="result-panel-text">Регион характеризуется разнообразной экономикой с сильной аграрной основой и развитыми промышленными предприятиями, включая легкую и пищевую промышленность.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Сельское хозяйство</div>
+                    <div class="result-panel-text">Брестская область известна своим сельским хозяйством. Здесь производится значительное количество сельскохозяйственной продукции, что создает рабочие места и поддерживает местную экономику.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Туризм</div>
+                    <div class="result-panel-text">Регион привлекает туристов своими природными красотами, историческими и культурными достопримечательностями, такими как Беловежская пуща и Брестская крепость.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Экологическая чистота</div>
+                    <div class="result-panel-text">Множество лесов, рек и озёр обеспечивают чистую экологическую обстановку, что делает область привлекательной для жизни и отдыха.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Культурное наследие</div>
+                    <div class="result-panel-text">Брестская область имеет богатую историю и культуру, что отражается в её традициях, праздниках и местных обычаях.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Инвестиционные возможности</div>
+                    <div class="result-panel-text">Регион активно привлекает инвестиции, предлагая благоприятные условия для ведения бизнеса и развития новых проектов.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Качество жизни</div>
+                    <div class="result-panel-text">Относительно низкая плотность населения и наличие зеленых зон способствуют комфортному образу жизни.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Развитие образования и науки</div>
+                    <div class="result-panel-text">В области функционируют учебные заведения, которые готовят квалифицированные кадры для различных отраслей.</div>
+                </div>
+            </div>
+        </div>
+        <div id="result3" class="result">
+            <div class="result-title">Города Витебской области</div>
+            <div class="result-panels">
+                <div class="result-panel">
+                    <div class="result-panel-title">Географическое положение</div>
+                    <div class="result-panel-text">Витебская область расположена на северо-востоке Беларуси и граничит с Латвией и Россией, что делает её стратегически важным регионом для международной торговли.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Природа и экология</div>
+                    <div class="result-panel-text">Регион славится своими природными комплексами, в том числе множеством озёр, лесов и природных заповедников. Это создает комфортные условия для отдыха и экотуризма.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Культурное наследие</div>
+                    <div class="result-panel-text">Витебская область богата историческими и культурными памятниками. Город Витебск известен как родина Марка Шагала и привлекает туристов своими художественными и культурными событиями, включая фестиваль искусств «Славянский базар».</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Развивающаяся экономика</div>
+                    <div class="result-panel-text">Область обладает разнообразной экономикой с акцентом на лёгкую и пищевую промышленность, а также сельское хозяйство, что обеспечивает рабочие места и развитие региона.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Сельское хозяйство</div>
+                    <div class="result-panel-text">Витебская область активно занимается сельским хозяйством, что позволяет производить разнообразные продукты и укреплять продовольственную безопасность.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Транспортная инфраструктура</div>
+                    <div class="result-panel-text">Регион имеет разветвлённую сеть дорог и железных дорог, что способствует логистике и передвижению как по стране, так и за её пределами.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Инвестиционный климат</div>
+                    <div class="result-panel-text">Витебская область предлагает выгодные условия для инвесторов, включая налоговые льготы и программы поддержки бизнеса.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Образование и наука</div>
+                    <div class="result-panel-text">В области действуют учебные заведения, которые готовят специалистов для различных отраслей, что способствует развитию экономики.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Качество жизни</div>
+                    <div class="result-panel-text">Более спокойная и размеренная жизнь по сравнению с крупными городами, наличие зелёных зон и свежего воздуха.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Социальная стабильность</div>
+                    <div class="result-panel-text">Относительная безопасность и низкий уровень преступности делают жизнь в области комфортной.</div>
+                </div>
+            </div>
+        </div>
+        <div id="result4" class="result">
+            <div class="result-title">Города Гродненской области</div>
+            <div class="result-panels">
+                <div class="result-panel">
+                    <div class="result-panel-title">Природные ресурсы</div>
+                    <div class="result-panel-text">Область славится живописными природными пейзажами, включающими леса, реки и озера. Это создает прекрасные условия для экотуризма, рыбалки и активного отдыха.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Культурное наследие</div>
+                    <div class="result-panel-text">Гродненская область богата историей и культурой. Здесь находятся множество исторических памятников, таких как Гродненский замок, Коложская церковь и многочисленные соборы.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Экономические возможности</div>
+                    <div class="result-panel-text">Область активно развивает сельское хозяйство, особенно в производстве молока и мяса. Это создает рабочие места и способствует экономическому росту.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Туризм</div>
+                    <div class="result-panel-text">Регион привлекает туристов благодаря своей истории и культуре. Развито агротуризм — местные фермеры предлагают туристам ознакомиться с жизнью на селе.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Географическое положение</div>
+                    <div class="result-panel-text">Гродненская область граничит с Польшей и Литвой, что открывает возможности для международного сотрудничества и торговли.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Развитая инфраструктура</div>
+                    <div class="result-panel-text">В области хорошо развиты транспортные связи, включая автомобильные и железнодорожные сообщения, что облегчает передвижение жителей и туристов.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Образование и наука</div>
+                    <div class="result-panel-text">В Гродно расположены несколько учебных заведений, что способствует повышению уровня образования и научной деятельности в регионе.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Социальная политика</div>
+                    <div class="result-panel-text">Власти области активно работают над улучшением жизненных условий и социальной инфраструктуры, включая здравоохранение и культуру.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Многонациональность</div>
+                    <div class="result-panel-text">Гродненская область отличается многонациональным населением, что создает уникальную культурную атмосферу и способствует межкультурному диалогу.</div>
+                </div>
+            </div>
+        </div>
+        <div id="result5" class="result">
+            <div class="result-title">Города Могилевской области</div>
+            <div class="result-panels">
+                <div class="result-panel">
+                    <div class="result-panel-title">Ресурсы и сельское хозяйство</div>
+                    <div class="result-panel-text">Область обладает плодородными землями, которые способствуют развитию сельского хозяйства. Здесь активно производится зерно, мясо, молоко и другие сельскохозяйственные продукты.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Историческое наследие</div>
+                    <div class="result-panel-text">Могилёвская область знаменита своим культурным наследием. Город Могилёв, как центр области, имеет множество исторических памятников, музейных комплексов и архитектурных достопримечательностей.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Развитая инфраструктура</div>
+                    <div class="result-panel-text">Область имеет хорошо развитую транспортную сеть, включая железные и автомобильные дороги, что обеспечивает удобное сообщение как внутри региона, так и с другими частями страны.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Туризм</div>
+                    <div class="result-panel-text">Могилёвская область привлекает туристов своими природными красотами, историческими местами и культурными мероприятиями. Экотуризм и агротуризм становятся все более популярными.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Экономические возможности</div>
+                    <div class="result-panel-text">Регион активно развивает промышленность, в том числе легкую и перерабатывающую, что создает рабочие места и способствует экономическому росту.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Образование</div>
+                    <div class="result-panel-text">В области расположено несколько учебных заведений, включая университеты и колледжи, которые предлагают широкий спектр образовательных программ.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Экологическая ситуация</div>
+                    <div class="result-panel-text">Могилёвская область имеет много лесов и водоемов, что способствует хорошей экологии и возможностей для отдыха на природе.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Многонациональность</div>
+                    <div class="result-panel-text">Область населяется представителями разных национальностей, что создает уникальную культурную атмосферу и способствует межкультурному сотрудничеству.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Социальные программы</div>
+                    <div class="result-panel-text">Власти региона активно работают над улучшением жизненных условий, включая программы в сферах здравоохранения, образования и социальной защиты.</div>
+                </div>
+            </div>
+        </div>
+        <div id="result6" class="result">
+            <div class="result-title">Города Гомельской области</div>
+            <div class="result-panels">
+                <div class="result-panel">
+                    <div class="result-panel-title">Природные ресурсы</div>
+                    <div class="result-panel-text">Область нередко воспринимается как "зеленое сердце" Беларуси благодаря богатым лесам, рекам и природным ландшафтам. Это создает возможности для экологического туризма и активного отдыха.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Сельское хозяйство</div>
+                    <div class="result-panel-text">Гомельская область является одним из ведущих сельскохозяйственных регионов страны. Здесь продуктивно развиваются различные направления, включая производство зерна, мяса, молока и овощей.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Развитая промышленность</div>
+                    <div class="result-panel-text">Область имеет мощный промышленный потенциал, включая производства в таких отраслях, как машиностроение, химическая и легкая промышленность. Это создает рабочие места и способствуют экономическому развитию.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Транспортная инфраструктура</div>
+                    <div class="result-panel-text">Гомельская область характеризуется развитой транспортной сетью, включая железные и автомобильные дороги, что обеспечивает удобное сообщение с другими регионами и странами.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Культурное наследие</div>
+                    <div class="result-panel-text">Гомельская область богата историей и культурой. Город Гомель славится своими архитектурными памятниками, музеями и фестивалями, что привлекает туристов.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Образование и наука</div>
+                    <div class="result-panel-text">В области расположены учебные заведения и научные учреждения, которые предлагают разнообразные образовательные программы и способствуют развитию науки и технологий.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Инвестиционная привлекательность</div>
+                    <div class="result-panel-text">Гомельская область активно привлекает инвестиции в разные сферы экономики, включая энергетику и агропромышленный комплекс, что способствует устойчивому развитию.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Разнообразие национальностей</div>
+                    <div class="result-panel-text">Многонациональное население области создает уникальную культурную атмосферу, способствуя межкультурному диалогу и обмена традициями.</div>
+                </div>
+                <div class="result-panel">
+                    <div class="result-panel-title">Социальные инициативы</div>
+                    <div class="result-panel-text">Власти заботятся о социальной сфере, развивая программы в области здравоохранения, образования и социальной защиты, что улучшает качество жизни местных жителей.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
